@@ -12,7 +12,7 @@ h4 {
 
 ul,
 ol {
-    padding-left: 0;
+    padding: 0;
     margin: 0;
   }
 
@@ -30,7 +30,7 @@ ol {
 }
 
 .container{
-   width: 1230px;
+   width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
    margin: 0 auto;
@@ -173,6 +173,13 @@ margin-right: 50px;
   padding-bottom: 94px;
 
 }
+.what-we-do-section{
+  padding-bottom: 94px;
+}
+.team-section{
+  padding-bottom: 94px;
+}
+
 .section-list{
   display: flex;
   align-items: center;
@@ -377,6 +384,8 @@ width: 270px;
   margin-bottom: 30px;}
 
 .text {
+  display: block;
+
    font-family: "Roboto";
   color: var(--primary-text-color);
   font-style: normal;
@@ -385,7 +394,7 @@ width: 270px;
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-bottom: 4px;
+  
 }
 .headline {
   font-family: 'Roboto';
@@ -400,19 +409,25 @@ width: 270px;
    
 
 .page-text{
-  border-left: 1px solid #EEEEEE;
+    padding: 20px 24px 20px 24px;
+    border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
-    padding: 24px 20px;
  
 }
 .page-img{
     display: block;
+    
+    width: 370px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
     color: var(--primary-text-color);
     text-decoration: none;
     background-color:var(--title-text-color);
 }
+.page-hero-item:nth-child(3n){
+  margin-right: 0;
+}
+
+  
