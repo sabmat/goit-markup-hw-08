@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    
   </head>
   <body>
     <header class="header">
@@ -38,18 +39,24 @@
         </nav>
         <ul class="header-items list">
           <li class="header-contact-link">
-            <a class="contact" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
+            <a class="contact" href="mailto:info@devstudio.com"> <svg width="16" height="12" >
+              <use href="./css/symbol-defs.svg#icon-envelope-1"> </use>
+            </svg>
+              info@devstudio.com 
+              </a>
+          
           </li>
           <li class="header-contact-link">
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact" href="tel:+380961111111"> <svg width="16" height="12"> 
+              <use href=""></use>
+
+            </svg> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero main-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn">Заказать услугу</button>
@@ -59,6 +66,10 @@
         <div class="container">
           <ul class="section-list list">
             <li class="section-item">
+              <div class="section-icon">
+               
+               
+              </div>
               <h3 class="section-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
               <p class="section-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -67,6 +78,14 @@
             </li>
 
             <li class="section-item">
+              <div class="section-icon">
+               <svg>
+                 <use href="./images/icons.svg#icon-antenna">
+
+                 </use>
+               </svg>
+               
+              </div>
               <h3 class="section-title">ПУНКТУАЛЬНОСТЬ</h3>
               <p class="section-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -75,6 +94,10 @@
             </li>
 
             <li class="section-item">
+              <div class="section-icon">
+               
+               
+              </div>
               <h3 class="section-title">ПЛАНИРОВАНИЕ</h3>
               <p class="section-text">
                 Равным образом консультация с широким активом в значительной
@@ -82,6 +105,10 @@
               </p>
             </li>
             <li class="section-item">
+              <div class="section-icon">
+               
+               
+              </div>
               <h3 class="section-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
               <p class="section-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -134,8 +161,16 @@
                 width="270"
                 height="260"
               />
+              <div class="team-features">
               <p class="features-text">Игорь Демьяненко</p>
               <p class="features-desc-text">Product Designer</p>
+              <ul class="features-list ">
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+              </ul>
+            </div>
             </li>
 
             <li class="features-section">
@@ -146,8 +181,16 @@
                 width="270"
                 height="260"
               />
+              <div class="team-features">
               <p class="features-text">Ольга Репина</p>
               <p class="features-desc-text">Frontend Developer</p>
+              <ul class="features-list ">
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+              </ul>
+            </div>
             </li>
 
             <li class="features-section">
@@ -158,8 +201,16 @@
                 width="270"
                 height="260"
               />
+              <div class="team-features">
               <p class="features-text">Николай Тарасов</p>
               <p class="features-desc-text">Marketing</p>
+              <ul class="features-list ">
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+              </ul>
+            </div>
             </li>
 
             <li class="features-section">
@@ -170,11 +221,30 @@
                 width="270"
                 height="260"
               />
+              <div class="team-features">
               <p class="features-text">Михаил Ермаков</p>
               <p class="features-desc-text">UI Designer</p>
+              
+              <ul class="features-list ">
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+                <li class="features-item"><a class="features-link" href=""></a></li>
+              </ul>
             </li>
           </ul>
         </div>
+      </section>
+      <section class="clients-section">
+        <h2 class="clients-section-title">Постоянные клиенты</h2>
+        <ul class="clients-section-list list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
     </main>
 
