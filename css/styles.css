@@ -308,6 +308,8 @@ margin-right: 50px;
   
 }
 .clients-section-title{
+ margin-bottom: 50px;
+
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -318,7 +320,22 @@ margin-right: 50px;
   color: #212121;
 
 }
+.clients-section-list{
+  display: flex;
+  justify-content: center;
+}
 
+.clients-link{
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .features-list{
   display: flex;
   justify-content: center;
@@ -335,7 +352,7 @@ margin-right: 50px;
 .features-item + .features-item{
   margin-left: 10px;
 }
-   /*Footer*/
+                                /*--------------Footer----------------*/
 
 .footer {
   padding-top: 60px;
