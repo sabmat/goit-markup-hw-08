@@ -339,6 +339,9 @@ margin-right: 50px;
 .clients-link + .clients-link{
   margin-left: 30px;
 }
+.clients-section-item{
+  list-style: none;
+}
 
 .features-list{
   display: flex;
