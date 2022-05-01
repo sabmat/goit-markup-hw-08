@@ -101,8 +101,10 @@ margin-right: 50px;
   color: var(--accent-color);
 }
 .contact {
-  margin-right: 50px;
-
+  margin-right: 50px; 
+    display: flex;
+    align-items: center;
+   
    font-family: "Roboto";
   color: var(--second-accent-color);
   font-weight: 500;
@@ -124,8 +126,10 @@ margin-right: 50px;
 }
 .contact-icon{
   margin-right: 10px;
+  fill: currentColor;
   
 }
+
 /*hero*/
 
 .hero{ 
@@ -159,20 +163,39 @@ margin-right: 50px;
   text-transform: uppercase;
 }
 .hero-btn {
-   font-family: "Roboto";
-   background-color: var(--accent-color) ;
-   color: var(--title-text-color);
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 1.8;
+  width: 200px;
+  height: 50px;
   
 
-   padding: 10px 32px;
-   border-radius: 4px;
-   width: 200px;
+  font-family: "Roboto";
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 
+.hero-btn:hover{
+  background: #188CE8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+ .hero-button{
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+
+ 
 /*-----sections------*/
 
 .section{
@@ -300,8 +323,40 @@ margin-right: 50px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
+
   margin-bottom: 16px;
 }
+
+.features-list{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.features-link{
+  width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: #AFB1B8;
+}
+ .features-link:hover,.features-link:focus{
+   background-color: var(--accent-color);
+   fill: var(--title-text-color);
+ }
+
+.features-item + .features-item{
+  margin-left: 10px;
+}
+
+
+
+/*-------CLIENTS-SECTION---------*/
+
+
 .clients-section{
   padding-top: 94px;
   padding-bottom: 94px;
@@ -331,43 +386,48 @@ margin-right: 50px;
   width: 170px;
   height: 92px;
   align-items: center;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    cursor: pointer;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}  
+.clients-icon{
+  fill: #AFB1B8;
 }
-.clients-link + .clients-link{
+
+.clients-link:hover,.clients-link:focus{
+border: 1px solid var(--accent-color);
+}
+ .clients-link:hover .clients-icon,
+ .clients-link:focus .clients-icon{
+   fill: var(--accent-color);
+ }
+
+.clients-section-item + .clients-section-item{
   margin-left: 30px;
 }
 .clients-section-item{
   list-style: none;
 }
 
-.features-list{
-  display: flex;
-  justify-content: center;
-  margin: 16px 32px 30px 32px;
-}
 
-.features-item{
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: block;
-  
-}
 
-.features-item + .features-item{
-  margin-left: 10px;
-}
                                 /*--------------Footer----------------*/
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  margin: auto;
 }
+.footer>.container {
+  display: flex;
+    align-items: baseline;}
 
+.footer-contact-section{
+ margin-right: 70px;
+    }
 .footer-logo {
   display: block;
   margin-bottom: 20px;
@@ -420,6 +480,47 @@ margin-right: 50px;
 .footer-link:hover {
   color: var(--accent-color);
 }
+ .footer-title{
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 16px;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+ color: #FFFFFF;
+ font-style: normal;
+ margin-bottom: 20px;
+ 
+}
+.footer-list-icon{
+  display: flex;
+  justify-content: center;
+}
+.footer-item-icon{
+  background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+ .footer-link-icon{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+ }
+ .footer-icons{
+   fill: var(--title-text-color);
+   
+ }
+ .footer-link-icon:hover,.footer-link-icon:focus{
+   background-color: var(--accent-color);
+ }
+
+.footer-item-icon+.footer-item-icon{
+  margin-left: 10px;
+}
+
+
 
 
 
@@ -442,25 +543,40 @@ margin-right: 50px;
 }
 
 .main-button {
-  display: block;
-  padding: 6px 22px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-color: transparent;
-  color: #212121;
-  
+  background-color: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
 }
 .main-button:hover,
 .main-button:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--accent-color);
+}
+
+.main-btn-text{
+  font-family: "Roboto";
+
+  display: block;
+    margin: 6px 22px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.main-button:hover .main-btn-text ,.main-button:focus .main-btn-text{
   color: var(--title-text-color);
 }
+
+
+
 .navigation-item:not(:last-child){
   margin-right: 8px;
 }
@@ -474,6 +590,10 @@ margin-right: 50px;
   width: 370px;
    margin-right: 30px;
   margin-bottom: 30px;}
+
+  .page-hero-item:hover{
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+  }
 
 .text {
   display: block;

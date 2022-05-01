@@ -40,12 +40,18 @@
         </nav>
         <ul class="header-items list">
           <li class="header-contact-link">
-            <a class="contact" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
+            <a  href="mailto:info@devstudio.com" class="contact"> <svg class="contact-icon" width="16" height="12" >
+              <use href="./images/symbol-defs.svg#icon-envelope-1"> </use>
+            </svg>
+              info@devstudio.com 
+              </a>
+          
           </li>
           <li class="header-contact-link">
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact" href="tel:+380961111111"> <svg class="contact-icon"  width="10" height="16"> 
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+
+            </svg> +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -56,19 +62,19 @@
           <h1 class="portfolio-name">Портфолио</h1>
           <ul class="navigation-list list">
             <li class="navigation-item">
-              <button class="main-button" type="button">Все</button>
+              <button class="main-button" type="button"><span class="main-btn-text">Все</span></button>
             </li>
             <li class="navigation-item">
-              <button class="main-button" type="button">Веб-сайты</button>
+              <button class="main-button" type="button"><span class="main-btn-text">Веб-сайты</span></button>
             </li>
             <li class="navigation-item">
-              <button class="main-button" type="button">Приложения</button>
+              <button class="main-button" type="button"><span class="main-btn-text">Приложения</span></button>
             </li>
             <li class="navigation-item">
-              <button class="main-button" type="button">Дизайн</button>
+              <button class="main-button" type="button"><span class="main-btn-text"> Дизайн</span></button>
             </li>
             <li class="navigation-item">
-              <button class="main-button" type="button">Маркетинг</button>
+              <button class="main-button" type="button"><span class="main-btn-text">Маркетинг</span></button>
             </li>
           </ul>
           <ul class="page-hero-list list">
@@ -195,6 +201,7 @@
     </main>
     <footer class="footer">
       <div class="container">
+        <div class="footer-contact-section">
         <a class="footer-logo" href="">
           Web <span class="accent">Studio</span>
         </a>
@@ -219,6 +226,33 @@
             </li>
           </ul>
         </address>
+      </div>
+          <div class="footer-links">
+            <p class="footer-title">присоединяйтесь</p>
+            <ul class="footer-list-icon">
+              <li class="footer-item-icon list footer-links  "><a class="footer-link-icon" href="">
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+              <li class="footer-item-icon  list footer-links"><a class="footer-link-icon" href="">
+              <svg class="footer-icons" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                 </svg>
+              </a></li>
+              <li class="footer-item-icon list footer-links"><a class="footer-link-icon" href="">
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a></li>
+              <li class="footer-item-icon list footer-links"><a class="footer-link-icon" href="">
+                <svg class="footer-icons" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+        
       </div>
     </footer>
   </body>
