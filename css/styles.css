@@ -94,7 +94,10 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4,0,0.2,1);
 }
+
+
 .header-link:hover,
 .header-link:focus,
 .header-link:active {
@@ -129,6 +132,7 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact:hover,
 .contact:focus,
@@ -153,8 +157,10 @@ ol {
     ),
     url(../images/bg-img.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 .main-section {
   padding-top: 200px;
@@ -439,7 +445,9 @@ ol {
   align-items: center;
   cursor: pointer;
   fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .features-link:hover,
 .features-link:focus {
   background-color: var(--accent-color);
@@ -449,6 +457,10 @@ ol {
 .features-item + .features-item {
   margin-left: 10px;
 }
+.features-item{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 /*-------CLIENTS-SECTION---------*/
 
@@ -483,10 +495,14 @@ ol {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .clients-link:hover,
 .clients-link:focus {
@@ -597,6 +613,7 @@ ol {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons {
   fill: var(--title-text-color);
@@ -624,7 +641,7 @@ ol {
 
 .navigation-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -633,6 +650,7 @@ ol {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus {
