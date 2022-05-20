@@ -8,6 +8,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -47,26 +48,21 @@ ol {
   border-bottom: 1px solid #ececec;
 }
 .header-logo {
-  align-items: center;
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
 
   font-family: "Raleway";
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.1;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  align-items: center;
 }
 .header-logo-accent {
-  font-family: "Raleway";
-  color: #000000;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 .header-list {
   display: flex;
@@ -94,9 +90,8 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .header-link:hover,
 .header-link:focus,
@@ -159,8 +154,8 @@ ol {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .main-section {
   padding-top: 200px;
@@ -234,7 +229,7 @@ ol {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   background-color: #ffffff;
@@ -249,23 +244,26 @@ ol {
   opacity: 0;
   transform: translate(-50%, -50%) scale(1.2);
 }
-
-.close-btn {
+.modal-thumb {
   position: absolute;
   top: 8px;
   right: 8px;
-
+}
+.close-btn {
   width: 30px;
   height: 30px;
-
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: #ffffff;
+  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
+  color: #000000;
+  fill: currentColor;
+  background-color: transparent;
+  transition-property: background-color, color;
 }
+
 .close-btn-icon {
   display: block;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -445,7 +443,8 @@ ol {
   align-items: center;
   cursor: pointer;
   fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features-link:hover,
@@ -457,10 +456,10 @@ ol {
 .features-item + .features-item {
   margin-left: 10px;
 }
-.features-item{
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.features-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /*-------CLIENTS-SECTION---------*/
 
@@ -502,7 +501,6 @@ ol {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .clients-link:hover,
 .clients-link:focus {
@@ -650,7 +648,9 @@ ol {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus {
@@ -776,4 +776,250 @@ ol {
 
 .hero-image {
   display: block;
+}
+
+.subscribe {
+  position: relative;
+  margin-left: 93px;
+}
+.form-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  color: var(--title-text-color);
+}
+.form-container {
+  display: flex;
+}
+.form-container input {
+  margin: 0;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.form-container input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-btn {
+  display: flex;
+  height: 50px;
+  width: 200px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button-sub {
+  display: block;
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form-title {
+  margin-bottom: 12px;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.modal-form-name {
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form-field input {
+  margin-top: 4px;
+  padding-left: 42px;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+  font-size: 20px;
+}
+.form-icons {
+  display: block;
+  fill: currentColor;
+}
+.hero-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.form-field input:focus + .hero-form-icon {
+  fill: var(--accent-color);
+}
+
+.form-field-wrap {
+  margin-bottom: 20px;
+}
+
+.comentary-holder {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comentary-holder:focus {
+  border-color: var(--accent-color);
+}
+
+.comentary-holder::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-headline {
+  margin-bottom: 4px;
+  display: block;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.form-field-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.form-agreement {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.form-checbox {
+  display: block;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.71;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+}
+.field-checbox {
+  display: inline-block;
+  position: absolute;
+  top: 76%;
+  left: 8.5%;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 3px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-agreement:checked + .field-checbox {
+  background-color: var(--accent-color);
+  background-image: url(/images/check.svg);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+.modal-form-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 2px solid var(--accent-color);
+
+  align-items: center;
+  text-align: center;
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
