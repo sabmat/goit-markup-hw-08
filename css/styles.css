@@ -963,8 +963,7 @@ ol {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
-.form-agreement {
+.visually-hidden{
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -978,29 +977,35 @@ ol {
 }
 
 .form-checbox {
-    margin-top: 20px;
-    width: 370px;
-    height: 24px;
-    align-items: center;
-    cursor: pointer;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
+  display: flex;
+  align-items: center;
+  position: absolute;
+    right: 55px
 }
 
-.field-checbox {
-  display: inline-block;
-  margin-right: 6px;
 
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 3px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-agreement:checked + .field-checbox {
+ .form-checbox::before{
+   content: '';
+   width: 16px;
+   height: 15px;
+   border: 2px solid var(--primary-text-color);
+   border-radius: 3px;
+  margin-right: 8px;
+
+ }
+
+.form-agreement:checked +.form-checbox::before{
   background-color: var(--accent-color);
-  background-image: url(/images/check.svg);
-  background-origin: border-box;
-  border-color: var(--accent-color);
+  border: none;
+  background-image:url(../images/check.svg) ;
 }
 .modal-form-button {
   position: absolute;
