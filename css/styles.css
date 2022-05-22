@@ -262,6 +262,7 @@ ol {
   fill: currentColor;
   background-color: transparent;
   transition-property: background-color, color;
+  cursor: pointer;
 }
 
 .close-btn-icon {
@@ -586,9 +587,10 @@ ol {
   color: var(--accent-color);
 }
 .footer-title {
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -783,7 +785,9 @@ ol {
   margin-left: 93px;
 }
 .form-title {
+  font-family: "Roboto";
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   display: block;
@@ -974,24 +978,20 @@ ol {
 }
 
 .form-checbox {
-  display: block;
-  align-items: center;
-  margin-bottom: 30px;
-  text-align: center;
-  line-height: 1.71;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  color: #757575;
+    margin-top: 20px;
+    width: 370px;
+    height: 24px;
+    align-items: center;
+    cursor: pointer;
 }
+
 .field-checbox {
   display: inline-block;
-  position: absolute;
-  top: 76%;
-  left: 8.5%;
+  margin-right: 6px;
+
   width: 16px;
   height: 15px;
-  border: 1px solid var(--primary-text-color);
+  border: 2px solid var(--primary-text-color);
   border-radius: 3px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1003,6 +1003,9 @@ ol {
   border-color: var(--accent-color);
 }
 .modal-form-button {
+  position: absolute;
+    bottom: 40px;
+    right: 30%;
   width: 200px;
   height: 50px;
   background-color: var(--accent-color);
