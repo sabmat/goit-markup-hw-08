@@ -1,0 +1,88 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero__title {
+  width: 696px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: "Roboto";
+  color: $white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero__btn {
+  width: 200px;
+  height: 50px;
+
+  font-family: "Roboto";
+  border: none;
+  box-shadow: $shadow-color;
+  border-radius: 4px;
+  background-color: $blue-color;
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  background: #188ce8;
+  box-shadow: $shadow-color;
+  border-radius: 4px;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+}
+.close-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #000000;
+  fill: currentColor;
+  background-color: transparent;
+  transition-property: background-color, color;
+  cursor: pointer;
+}
+
+.close-btn-icon {
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn:hover .close-btn-icon {
+  fill: $blue-color;
+}

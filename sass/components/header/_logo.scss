@@ -1,0 +1,29 @@
+.section-header {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background-color: $white-color;
+  border-bottom: 1px solid #ececec;
+}
+.header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $titels-color;
+  text-decoration: none;
+}
+.header__accent {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $blue-color;
+  text-decoration: none;
+}
