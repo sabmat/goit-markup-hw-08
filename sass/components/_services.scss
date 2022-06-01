@@ -20,11 +20,13 @@
 .services__item {
   display: flex;
   position: relative;
-}
 
-.services__item:not(:last-child) {
+  
+&:not(:last-child) {
   margin-right: 30px;
 }
+}
+
 .services__title {
   position: absolute;
   display: block;

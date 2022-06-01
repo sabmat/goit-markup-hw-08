@@ -11,10 +11,12 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  &:hover {
+    color: $blue-color;
+  }
 }
-.footer__map:hover {
-  color: $blue-color;
-}
+
 .footer__link {
   width: 200px;
 
@@ -25,7 +27,9 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-.footer__link:hover {
-  color: $blue-color;
+
+  &:hover {
+    color: $blue-color;
+  }
+  
 }

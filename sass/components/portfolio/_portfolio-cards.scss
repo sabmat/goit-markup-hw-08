@@ -9,6 +9,11 @@
   margin-right: 30px;
   margin-bottom: 30px;
   position: relative;
+
+  
+&:nth-child(3n) {
+  margin-right: 0;
+}
 }
 
 .text {
@@ -37,20 +42,19 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-.page-hero-item:nth-child(3n) {
-  margin-right: 0;
-}
 .page-hero-link {
   position: relative;
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.page-hero-link:hover,
-.page-hero-link:focus {
+
+  &:hover,
+&:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+}
+
 
 .page-hero-cover {
   display: block;

@@ -6,9 +6,7 @@
 .team__list {
   display: flex;
 }
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .team__item {
   display: block;
   border-color: $white-color;
@@ -17,6 +15,10 @@
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   background-color: $white-color;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__img {
@@ -66,13 +68,14 @@
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-block__link:hover,
-.social-block__link:focus {
+    
+&:hover,
+&:focus {
   background-color: $blue-color;
   fill: $white-color;
 }
+}
+
 
 .social-block__item + .social-block__item {
   margin-left: 10px;

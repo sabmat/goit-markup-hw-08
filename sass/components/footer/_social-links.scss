@@ -27,13 +27,15 @@
   align-items: center;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ &:hover,
+&:focus {
+  background-color: $blue-color;
+}
+
 }
 .social-block__icons {
   fill:$white-color;
-}
-.social-block__link:hover,
-.social-block__link:focus {
-  background-color: $blue-color;
 }
 
 .social-block__list + .social-block__list {

@@ -43,12 +43,14 @@
   border-radius: 4px;
   background-color: $blue-color;
   cursor: pointer;
-}
 
-.hero__btn:hover {
+  
+&:hover {
   background: #188ce8;
   box-shadow: $shadow-color;
   border-radius: 4px;
+}
+
 }
 
 .hero-button {
