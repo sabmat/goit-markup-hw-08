@@ -12,17 +12,16 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img-ph.jpg);
+          url(/images/bg-img-ph-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            & {
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-phone.jpg);
-            }
+                url(/images/bgr-phone-1.jpg);
+            
           }
-          
+
   }
   @media screen and (min-width: 768px) {
       padding-top: 116px;
@@ -31,15 +30,15 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img-tablet.jpg);
+          url(/images/bg-img-tablet-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            & {
+          
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-tablet.jpg);
-            }
+                url(/images/bgr-tablet-1.jpg);
+           
           }
   }
   @media screen and (min-width: 1200px) {
@@ -49,15 +48,15 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img.jpg);
+          url(/images/bg-img-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            & {
+           
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-hero.jpg);
-            }
+                url(/images/bgr-hero-1.jpg);
+           
           }
     
       
