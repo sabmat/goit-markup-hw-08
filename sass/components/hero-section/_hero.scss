@@ -1,25 +1,82 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bg-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
-}
-.main-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
+  margin-right: auto;
+    text-align: center;
+   
+    @media screen and (min-width: 320px) {
+      padding-top: 116px;
+      padding-bottom: 116px;
+      background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/bg-img-ph.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            & {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/bgr-phone.jpg);
+            }
+          }
+  }
+  @media screen and (min-width: 768px) {
+      padding-top: 116px;
+      padding-bottom: 116px;
+      background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/bg-img-tablet.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            & {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/bgr-tablet.jpg);
+            }
+          }
+  }
+  @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+          ),
+          url(/images/bg-img.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            & {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/bgr-hero.jpg);
+            }
+          }
+    
+      
+}}
+  .hero .container {
+    width: 100%;
+    padding: 0;
+  
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
 
 .hero__title {
-  width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -28,10 +85,15 @@
   font-family: "Roboto";
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px){
+    font-size: 44px;
+  }
+  
 }
 .hero__btn {
   width: 200px;

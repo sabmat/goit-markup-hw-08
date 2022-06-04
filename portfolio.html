@@ -21,15 +21,23 @@
   <body>
     <header class="header">
       <div class="container section-header">
-           <a href="./index.html" class="header__logo">
-            <span class="header__accent">Web</span>Studio
-          </a>
-          <ul class="navigation__list list">
+        <a href="./index.html" class="header__logo">
+          <span class="header__accent">Web</span>Studio
+        </a>
+        <button type="button" class="menu-open-btn">
+          <svg class="header__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class=" navigation__list list">
             <li class="navigation__item">
               <a class="navigation__link " href="./index.html">Студия </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link current" href="./portfolio.html">Портфолио</a>
+              <a class="navigation__link current " href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">Контакты</a>
@@ -37,7 +45,7 @@
           </ul>
         </nav>
         <ul class="contact list">
-          <li>
+          <li class="contact__list">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
@@ -45,7 +53,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li >
+          <li class="contact__list">
             <a class="contact__link" href="tel:+380961111111">
               <svg class="contact__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
@@ -55,9 +63,58 @@
           </li>
         </ul>
       </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="mob-menu__icon" width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list ">
+              <li class="mob-menu__item list ">
+                <a class="mob-menu__link link " href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu__item  list">
+                <a class="mob-menu__link " href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu__item list ">
+                <a class="mob-menu__link  " href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item">
+                <a class="mob-contacts__link " href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item-email ">
+                <a
+                  class="mob-contacts__link-email 
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-icon">Instagram</li>
+              <li class="mob-soc-icon">Twitter</li>
+              <li class="mob-soc-icon">Facebook</li>
+              <li class="mob-soc-icon-last">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section filter">
         <div class="container">
           <h1 class="portfolio-name">Портфолио</h1>
           <ul class="navigation-list list">
@@ -91,12 +148,28 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img-1.jpg 1x, images\img-1-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-1.jpg 1x, images\img-tab-1-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-1.jpg      1x,
+                      images\picture-1-2x.jpg2x
+                    "
+                  />
                 <img class="hero-image"
                   src="./images/picture-1.jpg"
                   alt="pic"
-                  width="370"
-                  height="294"
                 />
+                </picture>
                 <div class="text-overlay">
                 <p class="page-hero-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -114,12 +187,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img-2.jpg 1x, images\img-2-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-2.jpg 1x, images\img-tab-2-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-2.jpg      1x,
+                      images\picture-2-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-2.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -137,12 +227,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img-3.jpg 1x, images\img-3-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-3.jpg 1x, images\img-tab-3-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-3.jpg      1x,
+                      images\picture-3-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-3.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -160,12 +267,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img-4.jpg 1x, images\img-4-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-4.jpg 1x, images\img-tab-4-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-4.jpg      1x,
+                      images\picture-4-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-4.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -183,12 +307,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img--5.jpg 1x, images\img--5-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-5.jpg 1x, images\img-tab-5-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-5.jpg      1x,
+                      images\picture-5-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-5.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -206,12 +347,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img--6.jpg 1x, images\img--6-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-6.jpg 1x, images\img-tab-6-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-6.jpg      1x,
+                      images\picture-6-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-6.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -229,12 +387,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img--7.jpg 1x, images\img--7-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-7.jpg 1x, images\img-tab-7-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-7.jpg      1x,
+                      images\picture-7-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-7.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -252,12 +427,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img--8.jpg 1x, images\img--8-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-8.jpg 1x, images\img-tab-8-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-8.jpg      1x,
+                      images\picture-8-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-8.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -275,12 +467,29 @@
             <li class="page-hero-item">
               <a class="page-hero-link" href="">
               <div class="page-hero-cover">
+                <picture>
+                  <source
+                  media="(min-width:480px )"
+                  srcset="images\img--9.jpg 1x, images\img--9-2x.jpg 2x"
+                />
+                  <source
+                    media="(min-width:768px )"
+                    srcset="images\img-tab-9.jpg 1x, images\img-tab-9-2x.jpg 2x"
+                  />
+                 
+                  <source
+                    media="(min-width:1200px )"
+                    srcset="
+                      images\picture-9.jpg      1x,
+                      images\picture-9-2x.jpg2x
+                    "
+                  />
               <img class="hero-image"
                 src="./images/picture-9.jpg"
                 alt="pic"
-                width="370"
-                height="294"
+               
               />
+              </picture>
               <div class="text-overlay">
               <p class="page-hero-text">
                 Ресурс предлагает комплексные предложения с разным уровнем
@@ -382,5 +591,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

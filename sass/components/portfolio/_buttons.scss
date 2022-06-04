@@ -1,3 +1,10 @@
+.filter{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+
 .portfolio-name {
   position: absolute;
   width: 1px;
@@ -13,6 +20,17 @@
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .main-button {
@@ -30,6 +48,11 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: $blue-color;
+}
+@media screen and (max-width: 767px) {
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 }

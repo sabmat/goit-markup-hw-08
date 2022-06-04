@@ -1,6 +1,10 @@
 .services {
-  padding-bottom: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  padding-top: 0;
 }
+
 .section-title {
   display: block;
   margin-bottom: 50px;

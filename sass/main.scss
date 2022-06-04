@@ -2,13 +2,14 @@
 @import './base/reset';
 @import './utils/vars';
 
+@import './components/mob-menu';
+
 @import './components/portfolio/portfolio-cards';
 @import './components/portfolio/buttons';
 
 @import './components/footer/logo';
 @import './components/footer/footer';
 @import './components/footer/contacts';
-@import './components/footer/social-links';
 @import './components/footer/subscribe';
 
 @import './components/clients';
@@ -19,6 +20,6 @@
 @import './components/hero-section/backdrop';
 @import './components/hero-section/hero';
 
-@import './components/header/contact';
+
 @import './components/header/navigation';
 @import './components/header/logo';

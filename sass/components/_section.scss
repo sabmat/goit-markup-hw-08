@@ -1,16 +1,23 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section__list {
-  display: flex;
+  margin-top: 0;
+  @media screen and (min-width: 320px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
-  background:$filter-background-color;
+  background: $filter-background-color;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -18,13 +25,36 @@
   margin-bottom: 30px;
 }
 
-.section__item:not(:last-child) {
-  margin-right: 30px;
+.section__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+.section__item {
+  max-width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .section__title {
   margin-bottom: 10px;
-  width: 270px;
 
   font-family: "Roboto";
   color: $titels-color;
@@ -38,6 +68,7 @@
   font-family: "Roboto";
   color: $text-color;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  justify-content: center;
 }

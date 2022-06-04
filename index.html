@@ -20,6 +20,100 @@
   </head>
   <body>
     <main>
+      <header class="header">
+        <div class="container section-header">
+          <a href="./index.html" class="header__logo">
+            <span class="header__accent">Web</span>Studio
+          </a>
+          <button type="button" class="menu-open-btn">
+            <svg class="header__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class=" navigation__list list">
+              <li class="navigation__item">
+                <a class="navigation__link current" href="./index.html">Студия </a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link " href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contact list">
+            <li class="contact__list">
+              <a href="mailto:info@devstudio.com" class="contact__link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope-1"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__list">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <div class="mob-menu-top">
+              <button type="button" class="menu-close-btn">
+                <svg class="mob-menu__icon" width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="mob-menu__list ">
+                <li class="mob-menu__item list ">
+                  <a class="mob-menu__link link " href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu__item  list">
+                  <a class="mob-menu__link " href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu__item list ">
+                  <a class="mob-menu__link  " href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <ul class="mob-contacts list">
+                <li class="mob-contacts__item">
+                  <a class="mob-contacts__link " href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-contacts__item-email ">
+                  <a
+                    class="mob-contacts__link-email 
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="mob-soc-list list">
+                <li class="mob-soc-icon">Instagram</li>
+                <li class="mob-soc-icon">Twitter</li>
+                <li class="mob-soc-icon">Facebook</li>
+                <li class="mob-soc-icon-last">LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
       <section class="hero main-section">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -155,7 +249,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="services">
+      <section class="services">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="services__list list">
@@ -195,7 +289,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team">
         <div class="container">
           <h2 class="team__title title">Наша команда</h2>
@@ -203,22 +297,30 @@
             <li class="team__item list">
               <picture>
                 <source
-                  srcset="./images\team-desctop-1.jpg 1x, ./image/team-desctop-1-2x.jpg 2x"
                   media="(min-width:1200px )"
+                  srcset="
+                    ./images\team-desctop-1.jpg    1x,
+                    ./images/team-desctop-1-2x.jpg 2x
+                  "
                 />
                 <source
-                  srcset="./image/team-tab-1.jpg 1x, ./image/team-tab-1-2x.jpg 2x"
                   media="(min-width:768px )"
+                  srcset="
+                    ./images/team-tab-1.jpg    1x,
+                    ./images/team-tab-1-2x.jpg 2x
+                  "
                 />
-               <source media="(min-width:320px )" srcset="images\team-1.jpg 1x, ./images\team-1-2x.jpg">
-                 </picture>
+                <source
+                  media="(min-width:320px )"
+                  srcset="images\team-1.jpg 1x, ./images\team-1-2x.jpg 2x"
+                />
                 <img
-                  srcset="./image/team-1.jpg 1x, ./image/team-1-2x.jpg 2x"
                   class="team__img"
-                  src="./images/team-1.jpg"
+                  src="./images/team-desctop-1-2x.jpg "
                   alt="мужчина дизайнер "
                 />
-             
+              </picture>
+
               <div class="team__features">
                 <p class="team__text">Игорь Демьяненко</p>
                 <p class="team__desc-text">Product Designer</p>
@@ -262,7 +364,29 @@
             </li>
 
             <li class="team__item list">
-              <img class="team__img" src="./images/team-2.jpg" alt="женщина " />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    images\team-desctop-2.jpg      1x,
+                    images\team-desctop-2-2x.jpg2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="images\team-tab-2.jpg 1x, images\team-tab-2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:320px )"
+                  srcset="images\team-2.jpg 1x, images\team-2-2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team-2.jpg"
+                  alt="женщина "
+                />
+              </picture>
+
               <div class="team__features">
                 <p class="team__text">Ольга Репина</p>
                 <p class="team__desc-text">Frontend Developer</p>
@@ -306,11 +430,29 @@
             </li>
 
             <li class="team__item list">
-              <img
-                class="team__img"
-                src="./images/team-3.jpg"
-                alt="мужчина в белой рубашке"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    images\team-desctop-3.jpg      1x,
+                    images\team-desctop-3-2x.jpg2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="images\team-tab-3.jpg 1x, images\team-tab-3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:320px )"
+                  srcset="images\team-3.jpg 1x, images\team-3-2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team-3.jpg"
+                  alt="мужчина в белой рубашке"
+                />
+              </picture>
+
               <div class="team__features">
                 <p class="team__text">Николай Тарасов</p>
                 <p class="team__desc-text">Marketing</p>
@@ -354,11 +496,29 @@
             </li>
 
             <li class="team__item list">
-              <img
-                class="team__img"
-                src="./images/team-4.jpg"
-                alt="мужчина в черной футболке "
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px )"
+                  srcset="
+                    images\team-desctop-4.jpg      1x,
+                    images\team-desctop-4-2x.jpg2x
+                  "
+                />
+                <source
+                  media="(min-width:768px )"
+                  srcset="images\team-tab-4.jpg 1x, images\team-tab-4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:320px )"
+                  srcset="images\team-4.jpg 1x, images\team-4-2x.jpg 2x"
+                />
+                <img
+                  class="team__img"
+                  src="./images/team-4.jpg"
+                  alt="мужчина в черной футболке "
+                />
+              </picture>
+
               <div class="team__features">
                 <p class="team__text">Михаил Ермаков</p>
                 <p class="team__desc-text">UI Designer</p>
@@ -452,13 +612,13 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <a class="logo" href="">
             Web<span class="accent">Studio</span>
           </a>
-          <address>
+          <address class="footer-address">
             <ul class="footer-list list">
               <li class="footer__items">
                 <a
@@ -525,16 +685,17 @@
               placeholder="E-mail"
             />
             <button type="submit" class="social-section__btn">
-              <span class="social-section__button"> Подписаться</span>
+               Подписаться</span>
 
-              <svg class="social-section__icons" width="24" height="24">
+              <svg class="social-section__icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,7 +1,15 @@
 .section-header {
   display: flex;
   align-items: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
+.navigation{
+  display: flex;
+}
+
 
 .header {
   background-color: $white-color;
@@ -26,4 +34,5 @@
   letter-spacing: 0.03em;
   color: $blue-color;
   text-decoration: none;
+ 
 }

@@ -1,7 +1,11 @@
 .navigation__list {
   display: flex;
   margin-left: 93px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
+
 .navigation__item {
   display: block;
   padding-top: 32px;
@@ -10,8 +14,6 @@
 }
 
 .navigation__link {
-  position: relative;
-  margin-right: 50px;
 
   font-family: "Roboto";
   color: $titels-color;
@@ -29,7 +31,9 @@
 }
 
 }
-
+.navigation__item:not(:last-child){
+  margin-right: 50px;
+}
 
 .current {
   color: $blue-color;
@@ -46,4 +50,58 @@
   height: 4px;
   background-color: $blue-color;
   border-radius: 2px;
+}
+.contact {
+  display: flex;
+  margin-left: 84px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline;
+  }
+}
+
+.contact__link {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+
+  font-family: "Roboto";
+  color: $text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+&:focus,
+&:active {
+  color: $blue-color;
+}
+ @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .contact__list:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+}}
+
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
