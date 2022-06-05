@@ -1,13 +1,13 @@
 
 .footer-list{
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     margin-bottom: 60px;
   }
 }
 .footer-address{
   display: block;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -20,7 +20,6 @@
 }
 .footer__map {
   width: 231px;
-
   font-family: "Roboto";
   color: $white-color;
   font-style: normal;
@@ -28,10 +27,12 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  
 
   &:hover {
     color: $blue-color;
   }
+  
 }
 
 .footer__link {

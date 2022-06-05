@@ -31,22 +31,23 @@
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 20px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1200px) {
     display: block;
     text-align: center;
     justify-content: center;
   }
 }
 .footer-links{
+  margin-bottom: 20px;
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 60px;
   }
 }
 
 .social-block {
   display: flex;
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
+  @media screen and (max-width: 1200px) {
+    
     text-align: center;
     justify-content: center;
   }

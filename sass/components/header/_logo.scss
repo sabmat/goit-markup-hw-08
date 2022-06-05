@@ -1,20 +1,33 @@
 .section-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  text-align: center;
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
+  @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
   }
-}
+  @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: flex-start;
+}}
 .navigation{
-  display: flex;
-}
+
+      display: none;
+      @media screen and (min-width: 768px) {
+          display: block;
+      }
+    }
+
 
 
 .header {
   background-color: $white-color;
   border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+ 
 }
+    
+
 .header__logo {
   font-family: "Raleway";
   font-style: normal;

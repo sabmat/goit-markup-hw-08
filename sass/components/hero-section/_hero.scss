@@ -12,13 +12,13 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img-ph-1.jpg);
+          url(../images/bg-img-ph-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-phone-1.jpg);
+                url(../images/bgr-phone-1.jpg);
             
           }
 
@@ -30,14 +30,14 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img-tablet-1.jpg);
+          url(../images/bg-img-tablet-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-tablet-1.jpg);
+                url(../images/bgr-tablet-1.jpg);
            
           }
   }
@@ -48,14 +48,14 @@
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
           ),
-          url(/images/bg-img-1.jpg);
+          url(../images/bg-img-1.jpg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
           @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
            
               background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(/images/bgr-hero-1.jpg);
+                url(../images/bgr-hero-1.jpg);
            
           }
     
@@ -90,11 +90,23 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (max-width: 1199px) {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
     font-size: 44px;
+    line-height: 1.36;
+  }
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    display: block;
+    width: 290px;
+  }
   }
   
-}
+
 .hero__btn {
   width: 200px;
   height: 50px;

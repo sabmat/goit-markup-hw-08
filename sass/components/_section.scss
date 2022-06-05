@@ -26,6 +26,7 @@
 }
 
 .section__list {
+  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +56,9 @@
 
 .section__title {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  
 
   font-family: "Roboto";
   color: $titels-color;
