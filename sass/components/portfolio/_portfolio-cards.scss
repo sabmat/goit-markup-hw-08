@@ -10,7 +10,7 @@
   margin-bottom: 30px;
   background: $white-color;
   border: 1px solid #eeeeee;
-  // width: calc(100% / 3 - 30px);
+  
 
   @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
@@ -46,7 +46,7 @@
   padding: 20px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+ 
 }
 
 .page-hero-link {

@@ -1,7 +1,7 @@
 .navigation__list {
   display: flex;
   margin-left: 93px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -86,8 +86,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 1.71;
   }}
  .contact__list{
   display: flex;
